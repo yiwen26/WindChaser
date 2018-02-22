@@ -3,7 +3,7 @@ This is the DIRECT Project page for WindChaser group. This package is developed 
 
 # User Documentation
 
-![alt text](https://github.com/yiwen26/WindChaser/tree/master/Docs/use_case.png)
+![alt text](https://github.com/yiwen26/WindChaser/blob/master/Docs/use_case.png)
 ![alt text](https://github.com/chennnnnyize/Renewables_Scenario_Gen_GAN/blob/master/datasets/samples.png)
 
 ## Pre_Process Module
