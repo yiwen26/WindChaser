@@ -7,16 +7,16 @@ This is the DIRECT Project page for WindChaser group. This package is developed 
 ![alt text](https://github.com/yiwen26/WindChaser/blob/master/Docs/use_case.png)
 
 ## Brief Description:
-        * Forecast power generation and help with usage decision
+* Forecast power generation and help with usage decision
 
 ## User Input Data:
-        * time horizon (MM/YY/DD, 00:00-00:00)
-        * Location (zipcode)
-        * User demand (Power consumption)
+* time horizon (MM/YY/DD, 00:00-00:00)
+* Location (zipcode)
+* User demand (Power consumption)
 
 ## Output (prediction):
-        * Power generation at any time series
-        * Decision on the use of renewable energy
+* Power generation at any time series
+* Decision on the use of renewable energy
         
 
 ## Pre_Process Module
