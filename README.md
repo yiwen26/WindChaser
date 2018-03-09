@@ -22,3 +22,23 @@ This is currently a research project, and we do not plan to commercialize this, 
 
 ## Repository Outlines
 
+### Data
+Contains the raw data downloaded from <a href="https://www.nrel.gov/">`NREL`</a>, and the processed data we used in this project.
+
+### Docs
+Documentations about this project.
+
+### GUI demo
+The GUI created by `Matlab` shows the curve of the history of the wind power outages as well as the prediction curve obtained from `RNN`method of machine learning that we used in this project. Both the prediction and history power outages can be seen from the dashboard of this GUI.
+
+
+### Graphs
+Data distribution...
+
+### WindChaserModule
+Main part of this project. Contains all python packages and modules of machine learning method to implement the wind outage power prediction.
+
+### Poster
+### Group Photo
+
+
