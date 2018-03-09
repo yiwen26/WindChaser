@@ -1,5 +1,5 @@
 # WindChaser
-This is the DIRECT Project page for WindChaser group. This package is developed for wind power forecasting along with wind energy economic dispatch. 
+This is the DIRECT Project page for WindChaser group. This package is developed for wind power forecasting along with wind energy economic dispatch. The package was built and developed by wind data from wind farm in Seattle, WA. A GUI implementation of the package is also available.
 
 Group Member: Yiwen Wu, You Chen, Xiaoxiao Jia and Yize Chen
 
@@ -8,10 +8,17 @@ This is currently a research project, and we do not plan to commercialize this, 
 
 ## Software Dependencies
 
-Python 3.5
+* Python 3.5
 
-Tensorflow
+* Tensorflow
 
-Matlab
+* scikit-learn
+
+* pandas
+
+* numpy
+
+* Matlab
 
 ## Repository Outlines
+
