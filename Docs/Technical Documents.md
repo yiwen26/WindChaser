@@ -1,5 +1,14 @@
 In this file we note the basic algorithms for our project.
 
+## LSTM
+### Back Propagation
+
+
+### Loss function
+
+
+
+
 ## Q-Learning
 ### Reward function
 Suppose an agent is refered to one electricity user, who can make decision at each time slot to whether use electricity or not based on his 
