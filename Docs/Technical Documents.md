@@ -14,9 +14,10 @@ We design the reward function $r(s_t, a_t)$ based on price signal and utility fu
 level on delaying previous set schedule. For instance, we user's utility is large if it's his/her dinner time and wants to use microware.
 Yet the schedule for the washer has a flexible schedule which has a smaller utility. Then we have 
 
-$r(s_t,a_t)=p_t*a_t+U(s_t,a_t)$
+![Alt Text](https://github.com/yiwen26/WindChaser/blob/master/WindChaserModules/Reinforcement%20Learning/RL_equ2.gif)
+
 
 ### Q table and updates
 We start by initializing the table to be uniform (all zeros), and then as we observe the rewards we obtain for various actions, 
 we update the table accordingly. We will update the table using the Bellman Equation
-![Alt Text](https://www.dropbox.com/s/5achihe3wtldltu/equ1.gif)
+![Alt Text](https://github.com/yiwen26/WindChaser/blob/master/WindChaserModules/Reinforcement%20Learning/RL_Equ1.gif)
