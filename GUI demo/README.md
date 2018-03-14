@@ -8,5 +8,5 @@ An online real-time predictor with user interaction. Written in Matlab, and prov
 2. It provides a real-time update and shows the comparison of ground truth value and forecasts value based on test data.
 3. It shows the real-time update on model accuracy and current forecasts horizon.
 
-The real-time update for the demo is shown in the pdf file [here].(https://github.com/yiwen26/WindChaser/blob/master/GUI%20demo/demo.pdf)
+The real-time update for the demo is shown in the pdf file [here](https://github.com/yiwen26/WindChaser/blob/master/GUI%20demo/demo.pdf).
 
