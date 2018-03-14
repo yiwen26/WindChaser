@@ -1,18 +1,18 @@
-In this file we note the basic algorithms for our project.
+In this file we note the basic algorithms for our project both on forecasts and future decision making.
 
 ## LSTM
 ### Back Propagation
-Back-propagation algorithm is used to minimize the loss function by finding the right set of weights. The goal of the back-propagation algorithm is to compute the partial derivatives of the loss function with respect to the weights and biases. Since the task is to minimize a function by finding an optimal parameter, using gradient descent is the best way to learn a weight and bias.
+Back-propagation algorithm is used to minimize the loss function by finding the right set of weights. Actually it has become one of the cornerstones for the success of deep learning. The goal of the back-propagation algorithm is to optimize the loss over neurons by computing the partial derivatives of the loss function with respect to the weights and biases. Since the task is to minimize a function by finding an optimal parameter, using stochastic gradient descent is the best way to learn a weight and bias. Specifically, in LSTM with the introduction of input gate (i), forget gate (f), and output gate (o), at each timestep (with subscript t). Once updated the neuron weights, the new output and hidden states can be using feed-forward calculation as follows:
 
 <div align=center><img src="https://github.com/yiwen26/WindChaser/blob/master/Docs/Back_propagation.gif"/></div>
 
 ### Loss function
-In our work, to predict the wind power at LSTM network, we will use mean squared error loss functions. The method of minimizing MSE is called Ordinary Least Squares (OSL), the basic principle of OSL is that the optimized fitting line should be a line which minimizes the sum of distance of each point to the regression line. The MSE loss function is defined as:
+In our work, to predict the wind power at LSTM network, we will use mean squared error loss functions. The method of minimizing MSE is called Ordinary Least Squares (OSL). The basic principle of OSL is that the optimized fitting line should be a line which minimizes the sum of distance of each point to the corresponding forecasts result. The MSE loss function is calculated between LSTM's prediction and real values:
 
 
 <div align=center><img src="https://github.com/yiwen26/WindChaser/blob/master/Docs/Loss%20Function%20eq.png"/></div>
 
-
+where n is the batch size for stochastic gradient descent.
 
 
 ## Q-Learning
