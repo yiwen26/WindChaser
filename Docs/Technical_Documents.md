@@ -10,7 +10,7 @@ Back-propagation algorithm is used to minimize the loss function by finding the 
 In our work, to predict the wind power at LSTM network, we will use mean squared error loss functions. The method of minimizing MSE is called Ordinary Least Squares (OSL), the basic principle of OSL is that the optimized fitting line should be a line which minimizes the sum of distance of each point to the regression line. The MSE loss function is defined as:
 
 
-![Alt Text](https://github.com/yiwen26/WindChaser/blob/master/Docs/Loss%20Function%20eq.png)
+<div align=center><img width="3" height="1.5" src="https://github.com/yiwen26/WindChaser/blob/master/Docs/Loss%20Function%20eq.png"/></div>
 
 
 
