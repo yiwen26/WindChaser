@@ -25,4 +25,4 @@ we update the table accordingly. We will update the table using the Bellman Equa
 And it can be proved by updating the Q table using Bellman Equation, we are able to fine the optimal Q table for agent to make decisions.
 
 ### Epsilon Greedy for action selection
-The best lever is selected for a proportion 1-\epsilon  of the trials, and a level is selected at random (with uniform probability) for a proportion - <img src="https://latex.codecogs.com/gif.latex?O_t=\text { Onset event at time bin } t " />   . A typical parameter value might be  \epsilon =0.1}, and it helps the exploration of Q table.
+The best lever is selected for a proportion 1-\epsilon  of the trials, and a level is selected at random (with uniform probability) for a proportion \epsilon. A typical parameter value might be  \epsilon =0.1}, and it helps the exploration of Q table.
