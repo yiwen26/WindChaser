@@ -5,6 +5,7 @@ In this file we note the basic algorithms for our project.
 
 
 ### Loss function
+![Alt Text](https://github.com/yiwen26/WindChaser/blob/master/Docs/Loss%20Function%20eq.png)
 
 
 
