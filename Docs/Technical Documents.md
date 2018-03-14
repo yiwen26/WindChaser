@@ -21,3 +21,8 @@ Yet the schedule for the washer has a flexible schedule which has a smaller util
 We start by initializing the table to be uniform (all zeros), and then as we observe the rewards we obtain for various actions, 
 we update the table accordingly. We will update the table using the Bellman Equation
 ![Alt Text](https://github.com/yiwen26/WindChaser/blob/master/WindChaserModules/Reinforcement%20Learning/RL_Equ1.gif)
+
+And it can be proved by updating the Q table using Bellman Equation, we are able to fine the optimal Q table for agent to make decisions.
+
+### Epsilon Greedy for action selection
+The best lever is selected for a proportion 1-\epsilon  of the trials, and a level is selected at random (with uniform probability) for a proportion \epsilon . A typical parameter value might be  \epsilon =0.1}, and it helps the exploration of Q table.
