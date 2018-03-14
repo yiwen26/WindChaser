@@ -4,7 +4,7 @@ In this file we note the basic algorithms for our project.
 ### Back Propagation
 Back-propagation algorithm is used to minimize the loss function by finding the right set of weights. The goal of the back-propagation algorithm is to compute the partial derivatives of the loss function with respect to the weights and biases. Since the task is to minimize a function by finding an optimal parameter, using gradient descent is the best way to learn a weight and bias.
 
-<div align=center>![Alt Text](https://github.com/yiwen26/WindChaser/blob/master/Docs/Back_propagation.gif)
+<div align=center><src="https://github.com/yiwen26/WindChaser/blob/master/Docs/Back_propagation.gif"/></div>
 
 ### Loss function
 In our work, to predict the wind power at LSTM network, we will use mean squared error loss functions. The method of minimizing MSE is called Ordinary Least Squares (OSL), the basic principle of OSL is that the optimized fitting line should be a line which minimizes the sum of distance of each point to the regression line. The MSE loss function is defined as:
