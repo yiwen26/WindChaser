@@ -19,4 +19,4 @@ $r(s_t,a_t)=p_t*a_t+U(s_t,a_t)$
 ### Q table and updates
 We start by initializing the table to be uniform (all zeros), and then as we observe the rewards we obtain for various actions, 
 we update the table accordingly. We will update the table using the Bellman Equation
-![Alt Text](https://drive.google.com/file/d/1co8aXKPd6HKyuRlpTUXhup7EmlZ7w2Iy/view?usp=sharing)
+![Alt Text](https://www.dropbox.com/s/5achihe3wtldltu/equ1.gif?dl=0)
