@@ -4,7 +4,7 @@ In this file we note the basic algorithms for our project.
 ### Reward function
 Suppose an agent is refered to one electricity user, who can make decision at each time slot to whether use electricity or not based on his 
 judgement on the electricity price right now. He his an objective of minimizing the energy costs through a period of time. Suppose it has a 
-state at time $t$ which is denoted by $s_t$, representing how much more electricity he need to use by the end of day. Every time he also needs
+state at time $t$ which is denoted by s_t, representing how much more electricity he need to use by the end of day. Every time he also needs
 to make a decision $$a_t \in {0,1}$$, which represents his action at each time slot to use electricity of not (in future work, we will consider
 change $a_t$ as a continuous variable to denote how much energy it uses at each time). There is also also price signal $p_t$ which
 is a stochastic process (for simplicity, we can start from Markov process). Then based on price signal, the user needs to decide if he or she
