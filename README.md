@@ -28,7 +28,7 @@ Matlab
 ## Repository Outlines
 
 ### Data
-Contains the raw data downloaded from <a href="https://www.nrel.gov/">`NREL`</a>. It also contains the processed data under the same directory that we used for machine learning algorithm in this project.
+Contains the raw data related to wind power generation downloaded and sorted from <a href="https://www.nrel.gov/">`NREL`</a>. It also contains the processed data under the same directory that we used for machine learning algorithm in this project.
 
 ### Docs
 Documentations about this project. This includes stand-up presentations, find poster and detailed API user documentation.
@@ -41,15 +41,19 @@ The GUI created by `Matlab` shows the curve of the history ground truth of the w
 The graph module includes all the workflow plot as well as data processing and analysis, LSTM forecasts, Q learning for decision making results.
 
 ### WindChaserModule
-Main part of this project. Contains all python and Matlab packages, code and modules of machine learning method to implement the wind energy prediction.
+Main part of this project. Contains all python and Matlab packages, code and modules of machine learning method (both LSTM and Q learning) to implement the wind energy prediction.
 
 ### Poster
+The browser will pop out pdf version of poster automatically.
 <object data="https://github.com/yiwen26/WindChaser/blob/master/Docs/Presentation%20and%20posters/Poster.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/yiwen26/WindChaser/blob/master/Docs/Presentation%20and%20posters/Poster.pdf">
         This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/yiwen26/WindChaser/blob/master/Docs/Presentation%20and%20posters/Poster.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
+You can also view our poster [here](https://github.com/yiwen26/WindChaser/blob/master/Docs/Presentation%20and%20posters/Poster.pdf)
+
 ### Group Photo
+
 
 
