@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 from numpy import  shape
 import csv
 
+#Initialize the Q table. Right now we assume everyday the maximized electricity usage is 12, 
+#which can be set as user-defined parameters in the future implementation
 Q=np.zeros([13,2])
 gamma=0.8
 alpha=0.8
@@ -11,6 +13,8 @@ T = 10000
 lam = 2
 rand = np.random.uniform(0,1,(T,1))
 
+#Define the reward function: composed of price costs plus the user utility function to 
+#denote the user's satisfication level of delayed electricity service
 def reward(action, state, p_signal):
     if action==1:
         reward=-p_signal
@@ -31,6 +35,7 @@ def reward2(action, state, p_signal):
         reward=p_signal-1.0/3
     return reward  
 
+#Every step check the states to decide if some of the actions are available
 def available_actions(state):
     if state==0:
         action=[0]
@@ -39,6 +44,7 @@ def available_actions(state):
 
     return action
 
+#Use epsilon greedy method to update the actions based on Q-value.
 def sample_next_action(available_act, current_state, p):
     if(p<0.9):
         m=len(available_act)
@@ -52,6 +58,7 @@ def sample_next_action(available_act, current_state, p):
         next_action = int(np.random.choice(available_act, 1))
     return next_action
 
+#Define the update functions for Q function.
 def update(current_state, action, signal):
     reward_val=reward(action=action, state=current_state, p_signal=signal)
     max_value=-1e10
@@ -61,6 +68,7 @@ def update(current_state, action, signal):
     Q[current_state, action] += alpha*(reward_val + gamma * max_value-Q[current_state, action])
     return Q[current_state, action]
 
+#Update the current electricity usage state based on current state and current chosen action
 def update_state(current_state, action):
     if action==1:
         state=current_state-1
@@ -69,8 +77,8 @@ def update_state(current_state, action):
     return state
 
 
-
-n_episodes=1e3
+#The main function
+n_episodes=1e3 #Number of iterations.
 current_state=12
 print ("current state: %d"%current_state)
 scores=[]
@@ -90,7 +98,8 @@ for episode in range(T):
     score = update(current_state, action, price)
     scores.append(score)
 
-
+    
+    #The first 5,000 episodes can be understood as training set. Then compare the result against fixed schedule costs.
     if episode >5000:
         hour=episode-(day-1)*24
         if hour==6:
@@ -124,7 +133,7 @@ for episode in range(T):
         print("Current state:", current_state)
         if episode >5000:
             price_total+=current_state*price
-            price_total_list.append(0.9*np.copy(price_total))
+            price_total_list.append(np.copy(price_total))
             print("Naive price", np.copy(price_total_naive))
             print("Learned price", price_total)
             price_total_naive_list.append(np.copy(price_total_naive))
@@ -137,12 +146,14 @@ print ("price total naive: ", price_total_naive)
 
 print("Final Q table", Q)
 
+#Show the final accumulated price comparison plot
 price_total_naive_list=np.array(price_total_naive_list, dtype=float)
 price_total_list=np.array(price_total_list, dtype=float)
 plt.plot(price_total_naive_list, 'r', linewidth=2.0)
 plt.plot(price_total_list, 'b', linewidth=2.0)
 plt.show()
 
+#Compare and save the result
 with open('naive_price.csv', 'w') as f:
     writer = csv.writer(f)
     writer.writerows(price_total_naive_list)
