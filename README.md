@@ -1,6 +1,8 @@
 # WindChaser
 This is the DIRECT Project page for WindChaser group. This package is developed for wind power forecasting along with wind energy economic dispatch with a combination of LSTM and Q-Learning. The package was built and developed by wind data from wind farms in Seattle, WA. A GUI implementation for visualizing real-time forecasts is also available.
 
+As the name suggests, we 'chase' the wind by focusing on the high penetration of stochastic power generation processes into our modern grids. We mainly have two objectives. One is to utilize deep learning for training a more accurate preditor that can forecasts future wind power generation based on history. Another one is to utilize reinforcement learning for helping users to make decisions based on the volatile electricity price to make informed decisions.
+
 Group Member: Yiwen Wu, You Chen, Xiaoxiao Jia and Yize Chen
 
 ## License
@@ -45,9 +47,9 @@ Main part of this project. Contains all python and Matlab packages, code and mod
 
 ### Poster
 The browser will pop out pdf version of poster automatically.
-<object data="https://github.com/yiwen26/WindChaser/blob/master/Docs/Presentation%20and%20posters/Poster.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/yiwen26/WindChaser/blob/master/Docs/Presentation%20and%20posters/Poster.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/yiwen26/WindChaser/blob/master/Docs/Presentation%20and%20posters/Poster.pdf">Download PDF</a>.</p>
+<object data="http://blogs.uw.edu/yizechen/files/2018/03/Poster.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://blogs.uw.edu/yizechen/files/2018/03/Poster.pdf">
+        This browser does not support PDFs. Please download the PDF to view it: <a href="http://blogs.uw.edu/yizechen/files/2018/03/Poster.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
