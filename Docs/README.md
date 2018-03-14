@@ -97,19 +97,29 @@ Raises:
 * ValueError - If input data is not .csv file.
 * ValueError - If method is out of the given selection.
 
+## GUI module
+
 ## Reinforcement Learning module
-### Decision_maker(historyData, Predictfuture, user_profile)
+### Main function
+
+Params:
+
+* historyData - A .csv input with shape of (history time length, number of samples). The values in each entry of this .csv file is the wind power generation in MWh. Along with the file we also include information such as wind site id, location, the total period of time and date.
+
+* user_profile - A numpy array which includes a specific customer's one-day energy consumption with respect to time.
+
+### Sample_next_action(availableaction, currentstate, probability)
 Make decision on the use of wind energy based on historyData and prediction module, given a fixed user profile.
 
 The user has the choice of either using renewable energy or not using electricity energy during each time slot. In order to minimize its costs, it has to choose the energy provider based on the stochastic generation profile of wind as well as its own electricity usage profile.
 
 Params:
 
-* historyData - A .csv input with shape of (history time length, number of samples). The values in each entry of this .csv file is the wind power generation in MWh. Along with the file we also include information such as wind site id, location, the total period of time and date.
+availableaction
 
-* Predictfuture -  The neural network forecasts class which could provide accurate future forecasts. Such forecasts is used for decision-making.
+currentstate
 
-* user_profile - A numpy array which includes a specific customer's one-day energy consumption with respect to time.
+probability
 
 Returns:
 
