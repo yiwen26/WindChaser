@@ -37,7 +37,7 @@ At each time step, it will reinitialising the hidden state, return a N-D tensor 
 ## Training and Predication Results:
 We set the training parameters as: batch size of 14, hidden layer number is 10, time steps is 12, and after the model being trained 100 times, the comparision of true values and forecasted values of testing data are ploted as below: 
 
-![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values%20input).png).png)
+![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values%20input).png)
 
 |        Mean absolute error |  Root mean squared error  | 
 |---------------------------:|:-------------------------:|
