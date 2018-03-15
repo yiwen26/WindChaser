@@ -5,7 +5,7 @@ As the name suggests, we 'chase' the wind by focusing on the high penetration of
 
 Group Member: Yiwen Wu, You Chen, Xiaoxiao Jia and Yize Chen
 
-![alt text](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values%20input).png)
+![alt text](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values).png)
 
 ![alt text](https://github.com/yiwen26/WindChaser/blob/master/Graphs/1.png)
 
