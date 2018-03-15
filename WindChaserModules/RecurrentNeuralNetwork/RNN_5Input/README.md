@@ -44,13 +44,14 @@ We set the training parameters as: batch size of 14, hidden layer number is 10, 
 |---------------------------:|:-------------------------:|
 |                      0.138 |                     0.216 | 
 
-The red line represents the true testing values of wind power, the blue line is our predicated values, we can see our model shows a very accurate forcasting. This maybe because that our input data includes alomst all the weather feather (including the wind direction, wind speed, air temperature, surface air pressure, and density at hub height) that may influence the wind power. 
-
+* The red line represents the true testing values of wind power, the blue line is our predicated values
+* we can see our model shows a very accurate forcasting. This maybe because that our input data includes alomst all the weather feather (including the wind direction, wind speed, air temperature, surface air pressure, and density at hub height) that may influence the wind power. 
+* Compared with the other model, which included the history wind power values as input, this one shows a slightly lower predication accuracy.
 
 ## FAQ
 ### 1) Why we chose a time step of 12 (which means 12 hours with interval of 1 hour)?
 
-<img src="https://github.com/yiwen26/WindChaser/blob/master/Graphs/RMSE_vs_Time%20Steps.png" width="480">
+<img src="https://github.com/yiwen26/WindChaser/blob/master/Graphs/RMSE_vs_TimeSteps.png" width="480">
 
 After we built the LSTM model, we trained it with batch size of 14, RNN unit = 10, and time steps from 2 to 18, and recorded the root-mean-square errors, as the above figure show, our LSTM model reported a lowest prediction error at the time step of 12.
 
