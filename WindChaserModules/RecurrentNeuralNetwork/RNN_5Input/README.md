@@ -8,11 +8,15 @@ $ pip install tensorflow      # Python 2.7; CPU support
 ```
 
 ## Usage:
-Use the following command if you want to run the ``RNN_5input_XXJ.py`` in terminal
+Use the command ``nosetests `` if you want to run the unit tests in terminal, the results of unit tests shows as
 ```
-$ python RNN_5input_XXJ.py
+----------------------------------------------------------------------
+Ran 3 tests in 38.286s
+
+OK
 ```
-If you want to run the ``RNN_5input.ipynb``, please make sure to clear all the output first, in order to initialize all the weights and bias in LSTM.
+
+If you want to run the ``RNN_5input_XXJ.ipynb`` to see the training and predication results, please make sure to clear all the output first, in order to initialize all the weights and bias in LSTM.
 
 
 ## Training and Predication Results:
