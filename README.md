@@ -53,7 +53,7 @@ The browser will pop out pdf version of poster automatically.
     </embed>
 </object>
 
-You can also view our poster [here](https://github.com/yiwen26/WindChaser/blob/master/Docs/Presentation%20and%20posters/Poster.pdf)
+You can also view our poster [here](https://github.com/yiwen26/WindChaser/blob/master/Poster.pdf)
 
 ### Q-Learning Part Presentation
 You can also view our Q-Learning part introduction <a href="https://www.dropbox.com/s/avw5zm5t86dw7dq/Yize%20Part.mp4?dl=0">`video`</a>
