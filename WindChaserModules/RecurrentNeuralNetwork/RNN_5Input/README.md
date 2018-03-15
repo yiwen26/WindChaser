@@ -38,11 +38,11 @@ At each time step, it will reinitialising the hidden state, return a N-D tensor 
 ## Training and Predication Results:
 We set the training parameters as: batch size of 14, hidden layer number is 10, time steps is 12, and after the model being trained 100 times, the comparision of true values and forecasted values of testing data are ploted as below: 
 
-![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values%20input).png)
+![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values).png)
 
 |        Mean absolute error |  Root mean squared error  | 
 |---------------------------:|:-------------------------:|
-|                      0.009 |                     0.012 | 
+|                      0.138 |                     0.216 | 
 
 The red line represents the true testing values of wind power, the blue line is our predicated values, we can see our model shows a very accurate forcasting. This maybe because that our input data includes alomst all the weather feather (including the wind direction, wind speed, air temperature, surface air pressure, and density at hub height) that may influence the wind power. 
 
