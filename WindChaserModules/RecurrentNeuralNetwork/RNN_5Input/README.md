@@ -1,6 +1,6 @@
 # Recurrent Neural Network (Without Wind Power Input)
 
-This code based on ``Tensorflow``. Please make sure you have downloaded the package if you want to use ``RNN_5input_XXJ.py``
+This code based on ``Tensorflow``. Please make sure you have downloaded the package if you want to use ``RNN_5input_XXJ.py`` and ``RNN_5input_XXJ.ipynb``
 
 ## Install TensorFlow
 ```
@@ -19,21 +19,37 @@ OK
 If you want to run the ``RNN_5input_XXJ.ipynb`` to see the training and predication results, please make sure to clear all the output first, in order to initialize all the weights and bias in LSTM.
 
 
-## Training and Predication Results:
+## Some Methods Explaination: 
+* MinMaxScaler()
+It can rescale the data to the range of [0, 1], also called normalizing.
+Before building the RRN, we normalized the dataset using the MinMaxScaler() preprocessing class from the scikit-learn library first. Because LSTMs are sensitive to the scale of the input data, specifically when the sigmoid (default) or tanh activation functions are used. 
 
-![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values%20input).png)
+* min_max_scaler.transform(X_test)
+The same instance of the transformer can then be applied to some new test data unseen during the fit call: the same scaling and shifting operations will be applied to be consistent with the transformation performed on the train data.
+
+* cell.zero_state(batch_size, tf.float32)
+At each time step, it will reinitialising the hidden state, return a N-D tensor of shape [batch_size, state_size] filled with zeros.
+
+* Want to see more...
+  Find detailed documentation in the ``RNN_5input_XXJ.ipynb`` !
+
+
+## Training and Predication Results:
+We set the training parameters as: batch size of 14, hidden layer number is 10, time steps is 12, and after the model being trained 100 times, the comparision of true values and forecasted values of testing data are ploted as below: 
+
+![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values%20input).png).png)
 
 |        Mean absolute error |  Root mean squared error  | 
 |---------------------------:|:-------------------------:|
-|                      0.009 |                     0.011 | 
+|                      0.009 |                     0.012 | 
 
 The red line represents the true testing values of wind power, the blue line is our predicated values, we can see our model shows a very accurate forcasting. This maybe because that our input data includes alomst all the weather feather (including the wind direction, wind speed, air temperature, surface air pressure, and density at hub height) that may influence the wind power. 
 
 
 ## FAQ
-### 1) Why we chose a time step of 6 (which means 6 hours with interval of 1hour)?
-<img src="https://github.com/yiwen26/WindChaser/blob/master/Graphs/RMSE%20Progression%20of%20LSTM%20vs.%20Time%20Steps.png" width="480">
-After we built the LSTM model, we trained it with different time steps(from 6 to 18), and recorded the root-mean-square errors, as the above figure show, our LSTM model reported a lowest prediction error at the time step of 6.
+### 1) Why we chose a time step of 12 (which means 12 hours with interval of 1 hour)?
+<img src="https://github.com/yiwen26/WindChaser/blob/master/Graphs/RMSE_vs_Time%20Steps.png" width="480">
+After we built the LSTM model, we trained it with batch size of 14, RNN unit = 10, and time steps from 2 to 18, and recorded the root-mean-square errors, as the above figure show, our LSTM model reported a lowest prediction error at the time step of 12.
 
 
 ### 2) How we chose the rnn_unit and batch size?
