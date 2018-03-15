@@ -24,3 +24,7 @@ $ python RNN_5input_XXJ.py
 ![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/RMSE%20Progression%20of%20LSTM%20vs.%20Time%20Steps.png)
 
 After we built the LSTM model, we trained it with different time steps(from 6 to 18), and recorded the root-mean-square errors, as the above figure show, our LSTM model reported a lowest prediction error at the time step of 6.
+
+
+
+![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/TrainingParameters.png)
