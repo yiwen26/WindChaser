@@ -3,6 +3,8 @@ This is the code for Q learning on managing user electricity scheduling.
 ## Motivation
 Introduce a decision-making pipeline considering forecasts, stochastic process and interaction between users(agents) and electricity price(environments).
 
+In many realworld applications, people do not only care about making classification or regression, they also care about how to make a "good" decision. In this sense, they need to consider what they will get from the environment, and thus update their decision theory. This is the key insight to our motivation, which wants to train a smart agent that is able to learn to minimize its electricity bill with the existence of volatile electricity prices.
+
 ## Implementation
 For detailed methods and algorithmic implementations, please refer to the technical documentation under DOCs repository.
 
