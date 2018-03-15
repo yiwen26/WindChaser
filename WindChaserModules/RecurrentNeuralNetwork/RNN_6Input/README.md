@@ -18,8 +18,8 @@ $ nosetests test_RNN_Classifier.py
 
 ## Training and Predication Results:
 
-![Alt]
-(https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(With%20history%20power%20values%20input).png)
+![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(With%20history%20power%20values%20input).png)
+
 
 |        Mean absolute error |  Root mean squared error  | 
 |---------------------------:|:-------------------------:|
