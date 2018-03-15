@@ -5,6 +5,10 @@ As the name suggests, we 'chase' the wind by focusing on the high penetration of
 
 Group Member: Yiwen Wu, You Chen, Xiaoxiao Jia and Yize Chen
 
+![alt text](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values%20input).png)
+
+![alt text](https://github.com/yiwen26/WindChaser/blob/master/Graphs/1.png)
+
 ## License
 This is currently a research project, and we do not plan to commercialize this, this project is under the permissive MIT license. If anything changes, we will be sure to update accordingly. If you do happen to want to use any parts of this project, please do give reference. For more details, please read LICENSE.md
 
