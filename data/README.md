@@ -2,8 +2,7 @@
 
 ### Abstruct
 
-The purpose of oue data pre-processing is to overview roughly with our data. We resampled our data and calculate distibution and correlation coefficient, meanwhile visualized each data from diverse aspects.
-
+The purpose of our data pre-processing is to overview roughly on our data. We resampled our data and calculate distibution and correlation coefficient, meanwhile visualized each kinds of data from diverse aspects.
 
 ### Dataset we use
 
@@ -21,7 +20,7 @@ The purpose of oue data pre-processing is to overview roughly with our data. We 
 ### Instructions 
 
 More details are in the Jupyter notebook named `Wind_data_pre-processing`. Follow through the notebook and you can see features of our wind data.
-The work we do in this part is try to understand the data quickly. We made efforts to construct some traditional simple model to analyze the power. Among all the kinds of data, you can only found that wind speed is more related with power generation (their correlation coefficient is very close to 1.0). So we designed a strategy that we can use the natural data 'wind speed' to make prediction of power. But you can also see that the auto-correlation coefficient of speed and power is much far away form 1.0, it is around 0! Hence we choose to construct a re-current neural networks to forecasting the power.
+The work we did in this part is trying to understand the data quickly. We made efforts to construct some traditional simple model to analyze the power. Among all kinds of data, you can only found that wind speed is more related with power generation (their correlation coefficient is very close to 1.0). So we designed a strategy that we can use the natural data 'wind speed' to make prediction of power. But then you can also see that the auto-correlation coefficient of speed and power is much far away form 1.0, it is around 0! Hence we choosed to construct a re-current neural networks to forecasting the power.
 
 
 
