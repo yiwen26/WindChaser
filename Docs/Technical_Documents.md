@@ -6,6 +6,12 @@ Back-propagation algorithm is used to minimize the loss function by finding the 
 
 <div align=center><img src="https://github.com/yiwen26/WindChaser/blob/master/Docs/Back_propagation.gif"/></div>
 
+Want more math?!
+If you want to go deeper in the math, i.e. the algorithm used to compute gradients across multiple layers of neurons. Google it! or 
+<a href="https://wiseodd.github.io/techblog/2016/08/12/lstm-backprop/">`click here!`</a>
+It's useful if you want to re-implement gradient descent on your own, or understand how it is done. 
+
+
 ### Loss function
 In our work, to predict the wind power at LSTM network, we will use mean squared error loss functions. The method of minimizing MSE is called Ordinary Least Squares (OSL). The basic principle of OSL is that the optimized fitting line should be a line which minimizes the sum of distance of each point to the corresponding forecasts result. The MSE loss function is calculated between LSTM's prediction and real values:
 
