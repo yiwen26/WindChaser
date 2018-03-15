@@ -58,6 +58,6 @@ After we built the LSTM model, we trained it with batch size of 14, RNN unit = 1
 
 ### 2) How we chose the rnn_unit and batch size?
 
-![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/TrainingParameters.png)
+![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Training_Parameters.png)
 
 We traind our LSTM model and recorded the RMSE values and training time, as shown in the above list, if we use a smaller hidden layer number, say RNN unit = 5, our predication error will increase. As for the batch size, using a small batch size (eg. batch size =2), all though our model will report a higher accuracy, the training time is too long; while the LSTM model with a large batch size yields a lower prediction accuracy. Therefore, we decided to use a hiden layer number of 10 and a batch size of 14 to train our data set, which gives a adequate accuracy as well as a reasonable training time. 
