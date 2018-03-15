@@ -80,7 +80,7 @@ def get_train_data(batch_size, time_step, train_begin, train_end):
         if i % batch_size == 0:
             batch_index.append(i)
         x = normalized_train_data[i:i + time_step, 1:6]
-        y = normalized_train_data[i:i + time_step, 0, np.newaxis]
+        y = normalized_train_data[i+1:i + time_step+1, 0, np.newaxis]
         train_x.append(x.tolist())
         train_y.append(y.tolist())
     batch_index.append((len(normalized_train_data) - time_step))
@@ -105,7 +105,8 @@ def get_test_data(time_step, test_begin, test_len):
     # get test data
     size = test_len// time_step 
     normalized_test_data = scaled_x_data[test_begin: (test_begin+test_len)]
-    test_y = normalized_test_data[:,0]
+    normalized_test_lable = scaled_x_data[test_begin+1: (test_begin+test_len+1)]
+    test_y = normalized_test_lable[:,0]
     test_x = []
     for i in range(size):
         x = normalized_test_data[i * time_step:(i + 1) * time_step, 1:6]
