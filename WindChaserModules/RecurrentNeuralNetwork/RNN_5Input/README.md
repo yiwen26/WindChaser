@@ -19,7 +19,7 @@ If you want to run the ``RNN_5input.ipynb``, please make sure to clear all the o
 
 ![Alt](https://github.com/yiwen26/WindChaser/blob/master/Graphs/Wind%20Power%20Forecasting%20(Without%20history%20power%20values%20input).png)
 
-|       Mean absolute error: |  Root mean squared error  | 
+|        Mean absolute error |  Root mean squared error  | 
 |---------------------------:|:-------------------------:|
 |                      0.009 |                     0.011 | 
 
