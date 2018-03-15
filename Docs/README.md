@@ -115,11 +115,11 @@ The user has the choice of either using renewable energy or not using electricit
 
 Params:
 
-availableaction
+* availableaction
 
-currentstate
+* currentstate
 
-probability
+* probability
 
 Returns:
 
