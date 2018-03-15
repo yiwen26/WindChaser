@@ -61,5 +61,7 @@ You can also view our poster [here](https://github.com/yiwen26/WindChaser/blob/m
 
 ### Group Photo
 
+### Q-Learning Part Presentation
+You can also view our Q-Learning part introduction <a href="https://www.dropbox.com/s/avw5zm5t86dw7dq/Yize%20Part.mp4?dl=0">`video`</a>
 
 
